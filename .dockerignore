@@ -1,0 +1,7 @@
+.venv
+.git
+.gitignore
+venv
+__pycache__
+.flake8
+db.sqlite3

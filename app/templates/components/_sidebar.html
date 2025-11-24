@@ -1,0 +1,85 @@
+<nav class="d-none d-lg-block bg-custom text-custom text-decoration-none">
+    <div class="py-3">
+        <ul class="nav d-flex flex-column gap-0 row-gap-3 align-itens-start">
+            <li class="nav-item">
+                <a class="nav-link text-custom active" href="{% url 'home' %}">
+                    <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'product_list' %}">
+                    <i class="bi bi-box-seam me-2"></i>Produtos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'brand_list' %}">
+                    <i class="bi bi-shop me-2"></i>Marcas
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'inflow_list' %}">
+                    <i class="bi bi-arrow-down-circle me-2"></i>Entradas
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'outflow_list' %}">
+                    <i class="bi bi-arrow-up-circle me-2"></i>Saídas
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Sidebar MOBILE (offcanvas) -->
+<div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-white active" href="{% url 'home' %}">
+                    <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'product_list' %}">
+                    <i class="bi bi-box-seam me-2"></i>Produtos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'brand_list' %}">
+                    <i class="bi bi-shop me-2"></i>Marcas
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'inflow_list' %}">
+                    <i class="bi bi-arrow-down-circle me-2"></i>Entradas
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white-50" href="{% url 'outflow_list' %}">
+                    <i class="bi bi-arrow-up-circle me-2"></i>Saídas
+                </a>
+            </li>
+        </ul>
+        
+        <!-- User mobile -->
+        <div class="border-top mt-auto p-3">
+            <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-person-circle fs-3 me-2"></i>
+                <strong>{{user.username}}</strong>
+            </div>
+            <a href="#" class="btn btn-outline-light btn-sm w-100 mb-2">
+                <i class="bi bi-person"></i> Perfil
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm w-100 mb-2">
+                <i class="bi bi-gear"></i> Configurações
+            </a>
+            <a href="#" class="btn btn-danger btn-sm w-100">
+                <i class="bi bi-box-arrow-right"></i> Sair
+            </a>
+        </div>
+    </div>
+</div>

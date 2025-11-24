@@ -1,0 +1,49 @@
+<div class="card mt-4 bg-custom">
+    <div class="card-body">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-2 g-lg-4">
+            <div class="col">
+                <div class="card bg-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Qde de Vendas</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{sales_metrics.total_sales}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <h5 class="card-title">Produtos Vendidos</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{sales_metrics.total_products_sold}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-info-subtle">
+                    <div class="card-body">
+                        <h5 class="card-title">Valor das Vendas</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{sales_metrics.total_sales_value}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucro das Vendas</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{sales_metrics.total_sales_profit}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

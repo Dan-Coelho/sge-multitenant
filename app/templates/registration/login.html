@@ -1,0 +1,41 @@
+{% extends 'exemplo.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <div class="row my-5 text-custom">
+        <div class="card w-50" style="margin-left: 10rem;">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">LOGIN</h2>
+                <form method="post" class="d-flex flex-column">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuário</label>
+                        <input type="text" name="username" id="username" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Senha</label>
+                        <input type="password" name="password" id="password" class="form-control" required>
+                    </div>
+                    <div class="d-grip gap-2 align-self-center">
+                        <button type="submit" class="btn bg-success-subtle">Entrar</button>
+                    </div>
+                </form>
+                {% if form.errors %}
+                    <div class="alert alert-danger mt-4">
+                        <ul class="mb-0">
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    <li>{{error}}</li>
+                                {% endfor %}
+                            {% endfor %}
+                            {% for error in form.non_field_errors %}
+                                <li>{{error}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,49 @@
+<div class="card mt-4 bg-custom">
+    <div class="card-body">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-2 g-lg-4">
+            <div class="col">
+                <div class="card bg-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Qde de Produtos</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{product_metrics.total_quantity}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <h5 class="card-title">Custo de Estoque</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{product_metrics.total_cost_price}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-info-subtle">
+                    <div class="card-body">
+                        <h5 class="card-title">Valor do Estoque</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{product_metrics.total_selling_price}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucro de Estoque</h5>
+                        <p class="card-text text-white font-weight-bold display-6">
+                            {{product_metrics.total_profit}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

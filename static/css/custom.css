@@ -1,0 +1,30 @@
+.bg-custom-light {
+    background-color: #d6edb0;
+}
+
+.bg-custom-dark {
+    background-color: #1f2a0c;
+}
+
+.bg-custom {
+    background-color: #0d0f10;
+}
+
+.text-custom {
+    color: #ebf6d8;
+}
+
+.text-custom-light {
+    color: #3d5417
+}
+
+.btn-custom {
+    background-color: #1f2a0c;
+    border-color: #7aa72e;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: #5c7d23;
+    border-color: #c2e389;
+}
